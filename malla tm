@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva - Tecnología Médica UTalca</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .semestre {
+      margin-bottom: 40px;
+    }
+    .semestre h2 {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .ramo {
+      background-color: #fff;
+      border: 2px solid #007BFF;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
+      display: inline-block;
+      cursor: pointer;
+      transition: 0.3s;
+      max-width: 300px;
+    }
+    .ramo.tachado {
+      background-color: #ccc;
+      color: #444;
+      text-decoration: line-through;
+      border-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Interactiva - Tecnología Médica UTalca</h1>  <!-- Semestres 1 al 10 -->  <div class="semestre"><h2>Semestre 1</h2>
+    <div class="ramo" onclick="toggleRamo(this)">Comunicación Oral y Escrita I</div>
+    <div class="ramo" onclick="toggleRamo(this)">Idioma Extranjero I</div>
+    <div class="ramo" onclick="toggleRamo(this)">Morfología</div>
+    <div class="ramo" onclick="toggleRamo(this)">Química General</div>
+    <div class="ramo" onclick="toggleRamo(this)">Matemáticas para Ciencias Biomédicas I</div>
+    <div class="ramo" onclick="toggleRamo(this)">Estructura y Fisiología Celular I</div>
+    <div class="ramo" onclick="toggleRamo(this)">Bases para el Laboratorio</div>
+  </div>
+  <div class="semestre"><h2>Semestre 2</h2>
+    <div class="ramo" onclick="toggleRamo(this)">Comunicación Oral y Escrita II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Idioma Extranjero II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Morfofisiología I</div>
+    <div class="ramo" onclick="toggleRamo(this)">Química Orgánica</div>
+    <div class="ramo" onclick="toggleRamo(this)">Matemáticas para Ciencias Biomédicas II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Estructura y Fisiología Celular II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Salud Pública I</div>
+  </div>
+  <div class="semestre"><h2>Semestre 3</h2>
+    <div class="ramo" onclick="toggleRamo(this)">Autogestión del Aprendizaje</div>
+    <div class="ramo" onclick="toggleRamo(this)">Idioma Extranjero III</div>
+    <div class="ramo" onclick="toggleRamo(this)">Morfofisiología II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Métodos Instrumentales de Análisis Químicos</div>
+    <div class="ramo" onclick="toggleRamo(this)">Física para Ciencias Biomédicas</div>
+    <div class="ramo" onclick="toggleRamo(this)">Salud Pública II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Regulación Metabólica y Expresión Génica</div>
+  </div>
+  <div class="semestre"><h2>Semestre 4</h2>
+    <div class="ramo" onclick="toggleRamo(this)">Trabajo en Equipo y Desarrollo de Habilidades</div>
+    <div class="ramo" onclick="toggleRamo(this)">Fisiopatología</div>
+    <div class="ramo" onclick="toggleRamo(this)">Preclínico: Bases para el Laboratorio Clínico</div>
+    <div class="ramo" onclick="toggleRamo(this)">Bioestadística</div>
+    <div class="ramo" onclick="toggleRamo(this)">Inmunología</div>
+    <div class="ramo" onclick="toggleRamo(this)">Diagnóstico Clínico Molecular</div>
+    <div class="ramo" onclick="toggleRamo(this)">Seminario Integrado</div>
+  </div>
+  <div class="semestre"><h2>Semestre 5</h2>
+    <div class="ramo" onclick="toggleRamo(this)">Comprensión de Contextos Sociales</div>
+    <div class="ramo" onclick="toggleRamo(this)">Bases de Administración en Salud</div>
+    <div class="ramo" onclick="toggleRamo(this)">Epidemiología</div>
+    <div class="ramo" onclick="toggleRamo(this)">Microbiología General</div>
+    <div class="ramo" onclick="toggleRamo(this)">Bioquímica Clínica I</div>
+  </div>
+  <div class="semestre"><h2>Semestre 6</h2>
+    <div class="ramo" onclick="toggleRamo(this)">Comprensión de Contextos Culturales</div>
+    <div class="ramo" onclick="toggleRamo(this)">Bioquímica Clínica II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Hematología I</div>
+    <div class="ramo" onclick="toggleRamo(this)">Educación para la Salud</div>
+    <div class="ramo" onclick="toggleRamo(this)">Ética y Responsabilidad Social</div>
+  </div>
+  <div class="semestre"><h2>Semestre 7</h2>
+    <div class="ramo" onclick="toggleRamo(this)">Microbiología Clínica I</div>
+    <div class="ramo" onclick="toggleRamo(this)">Hematología II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Control de Calidad de Técnicas Analíticas</div>
+    <div class="ramo" onclick="toggleRamo(this)">Memoria I</div>
+  </div>
+  <div class="semestre"><h2>Semestre 8</h2>
+    <div class="ramo" onclick="toggleRamo(this)">Responsabilidad Social</div>
+    <div class="ramo" onclick="toggleRamo(this)">Inmunohematología</div>
+    <div class="ramo" onclick="toggleRamo(this)">Microbiología Clínica II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Parasitología I</div>
+    <div class="ramo" onclick="toggleRamo(this)">Gestión de Laboratorio I</div>
+  </div>
+  <div class="semestre"><h2>Semestre 9</h2>
+    <div class="ramo" onclick="toggleRamo(this)">Seminario Profesional</div>
+    <div class="ramo" onclick="toggleRamo(this)">Medicina Transfusional</div>
+    <div class="ramo" onclick="toggleRamo(this)">Parasitología II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Gestión de Laboratorio II</div>
+    <div class="ramo" onclick="toggleRamo(this)">Memoria II</div>
+  </div>
+  <div class="semestre"><h2>Semestre 10</h2>
+    <div class="ramo" onclick="toggleRamo(this)">Internado Clínico</div>
+  </div>  <script>
+    function toggleRamo(element) {
+      element.classList.toggle("tachado");
+    }
+  </script></body>
+</html>
